@@ -3,9 +3,9 @@ upstream php {
 } 
 
 server {
-    server_name book.example.com;
+    server_name {{ wp_domain }};
     
-    root /var/www/book.example.com;
+    root /var/www/{{ wp_domain }};
     
     index index.php;
     
